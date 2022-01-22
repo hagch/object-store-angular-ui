@@ -1,0 +1,28 @@
+{
+  "root": "apps/object-store-e2e",
+  "sourceRoot": "apps/object-store-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/object-store-e2e/cypress.json",
+        "devServerTarget": "object-store:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "object-store:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/object-store-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["object-store"]
+}

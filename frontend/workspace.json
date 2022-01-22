@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "object-store": "apps/object-store",
+    "object-store-e2e": "apps/object-store-e2e"
+  }
+}

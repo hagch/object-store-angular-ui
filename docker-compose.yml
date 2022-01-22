@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+    object-store-angular-ui:
+        restart: always
+        build: ./
+        image: angular-service
+        ports:
+            - 8889:8889
+        environment:
+            - SERVER_PORT=8889
+networks:
+    default:
+        external:
+            name: network-object-store
