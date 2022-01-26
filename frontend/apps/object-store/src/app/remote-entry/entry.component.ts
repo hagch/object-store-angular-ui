@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'frontend-object-store-entry',
+  selector: 'frontend1-object-store-entry',
   template: `<div class="remote-entry">
     <h2>object-store's Remote Entry Component</h2>
   </div>`,

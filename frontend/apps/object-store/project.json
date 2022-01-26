@@ -2,7 +2,7 @@
   "projectType": "application",
   "root": "apps/object-store",
   "sourceRoot": "apps/object-store/src",
-  "prefix": "frontend",
+  "prefix": "frontend1",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:webpack-browser",

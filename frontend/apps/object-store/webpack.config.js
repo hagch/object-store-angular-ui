@@ -74,12 +74,12 @@ module.exports = {
           requiredVersion: 'auto',
           includeSecondaries: true,
         },
-        /**rxjs: {
+        rxjs: {
           singleton: true,
           strictVersion: true,
           requiredVersion: 'auto',
           includeSecondaries: true,
-        },**/
+        },
         ...sharedMappings.getDescriptors(),
       }),
       library: {
